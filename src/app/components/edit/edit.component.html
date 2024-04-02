@@ -1,0 +1,15 @@
+<!-- <p>edit works!</p> -->
+<div>
+    <h2>Edit Note</h2>
+    <form (ngSubmit)="updateNote()" class="mb-3 createform">
+      <label for="title">Title:</label>
+      <input class='input-group mb-3' type="text" id="title" [(ngModel)]="note.title" name="title" required>
+      <label for="description">Description:</label>
+      <textarea class='input-group mb-3' id="description" [(ngModel)]="note.description" name="description" required></textarea>
+      <label for="color">Color:</label>
+      <input class='input-group mb-3' type="text" id="color" [(ngModel)]="note.color" name="color">
+      <button type="submit" >Update</button>
+      <button (click)="goback()">Back</button>
+    </form>
+  </div>
+  

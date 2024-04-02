@@ -1,0 +1,16 @@
+
+
+<div>
+  <h2>Create New Note</h2>
+  <form (ngSubmit)="createNew()" class="mb-3 createform">
+    <label for="title">Title:</label>
+    <input class='input-group mb-3' type="text" id="title" [(ngModel)]="newNote.title" name="title" required>
+    <label for="description">Description:</label>
+    <textarea class='input-group mb-3' id="description" [(ngModel)]="newNote.description" name="description" required></textarea>
+    <label for="color">Color:</label>
+    <input class='input-group mb-3' type="text" id="color" name="color" [(ngModel)]="newNote.color">
+    <button type="submit" >Create</button>
+    <button (click)="goback()">Back</button>
+  </form>
+</div>
+

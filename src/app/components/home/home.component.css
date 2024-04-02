@@ -1,0 +1,8 @@
+.main{
+    min-width: 400px;
+    max-width: 1440px;
+    gap: 25px;
+}
+.card{
+    border-color: antiquewhite;
+}
