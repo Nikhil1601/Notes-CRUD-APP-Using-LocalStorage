@@ -38,7 +38,8 @@ export class EditComponent implements OnInit{
     //   console.log(x)
     // })
     this.noteServices.update(this.note)
-    alert("Element edited")
+    this.router.navigate([''])
+    alert('File edited')
   }
   goback(){
     this.router.navigate([''])
